@@ -1,0 +1,46 @@
+import 'dart:async';
+
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
+
+import '../../../utils/src/firebase_collection_name.dart';
+import '../../../utils/src/firebase_field_name.dart';
+import '../../../utils/utils.dart';
+import '../domainModel/user_info_model.dart';
+
+final userInfoModelProvider =
+    StreamProvider.family.autoDispose<UserInfoModel, UserId>(
+  (ref, UserId userId) {
+    final controller = StreamController<UserInfoModel>();
+
+    /// watch the user based on UserID
+    final sub = FirebaseFirestore.instance
+        .collection(
+          FirebaseCollectionName.users,
+        )
+        .where(
+          FireBaseFieldName.userId,
+          isEqualTo: userId,
+        )
+        .limit(1)
+        .snapshots()
+        .listen((snapshot) {
+      if (snapshot.docs.isNotEmpty) {
+        final doc = snapshot.docs.first;
+        final json = doc.data();
+        final userInfoModel = UserInfoModel.fromJson(
+          json,
+          userId: userId,
+        );
+        controller.add(userInfoModel);
+      }
+    });
+
+    ref.onDispose(() {
+      sub.cancel();
+      controller.close();
+    });
+
+    return controller.stream;
+  },
+);

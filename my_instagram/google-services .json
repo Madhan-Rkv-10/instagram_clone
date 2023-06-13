@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "494432280166",
+    "project_id": "mad-han-instagram",
+    "storage_bucket": "mad-han-instagram.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:494432280166:android:a05b7d1d9748d66fce57a7",
+        "android_client_info": {
+          "package_name": "com.example.my_instagram"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "494432280166-7lrflkc3m50acvvqsmhr855gh24d8f6s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFQn8_NGv8xUk3aR0zCSBtrZxPksm_eaE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "494432280166-7lrflkc3m50acvvqsmhr855gh24d8f6s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

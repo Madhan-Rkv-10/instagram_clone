@@ -1,0 +1,128 @@
+name: my_instagram
+description: A new Flutter project.
+
+
+publish_to: 'none' 
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+
+  #StateManagements
+  
+  hooks_riverpod: ^2.3.6
+  rxdart: ^0.27.7
+
+  #Networks
+  connectivity_plus: ^3.0.6
+
+  #Local Storage
+  flutter_secure_storage: ^8.0.0
+  shared_preferences: ^2.1.0
+
+  #Widgets
+  another_flushbar: ^1.12.29
+  image_picker: ^0.8.7+4
+  #Firebase
+
+  firebase_core: ^2.13.0
+  firebase_auth: ^4.6.1
+  firebase_storage: ^11.2.1
+  cloud_firestore: ^4.7.1
+  #Facebook Authentication
+  flutter_facebook_auth: ^5.0.11
+   
+  #Google Authentication
+  google_sign_in: ^6.1.0
+
+  #Animations
+  lottie: ^2.3.2
+  image: ^4.0.17
+  uuid: ^3.0.7
+
+  #Video Player
+  video_thumbnail: ^0.5.3
+  video_player: ^2.6.1
+
+  #State Management
+  flutter_hooks: ^0.18.6
+
+  #Internationalization
+  intl: ^0.18.0
+  
+  #Widgets
+  font_awesome_flutter: ^10.4.0
+  url_launcher: ^6.1.11
+  share_plus: ^7.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+    - assets/animations/
+    - assets/json/language/
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+ 
+  
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+ 
+  
